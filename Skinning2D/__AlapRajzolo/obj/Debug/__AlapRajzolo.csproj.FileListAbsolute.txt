@@ -1,0 +1,98 @@
+D:\Troll\2020_21_BevGraf_A\__AlapRajzolo\__AlapRajzolo\bin\Debug\__AlapRajzolo.exe.config
+D:\Troll\2020_21_BevGraf_A\__AlapRajzolo\__AlapRajzolo\bin\Debug\__AlapRajzolo.exe
+D:\Troll\2020_21_BevGraf_A\__AlapRajzolo\__AlapRajzolo\bin\Debug\__AlapRajzolo.pdb
+D:\Troll\2020_21_BevGraf_A\__AlapRajzolo\__AlapRajzolo\obj\Debug\__AlapRajzolo.csprojResolveAssemblyReference.cache
+D:\Troll\2020_21_BevGraf_A\__AlapRajzolo\__AlapRajzolo\obj\Debug\__AlapRajzolo.Form1.resources
+D:\Troll\2020_21_BevGraf_A\__AlapRajzolo\__AlapRajzolo\obj\Debug\__AlapRajzolo.Properties.Resources.resources
+D:\Troll\2020_21_BevGraf_A\__AlapRajzolo\__AlapRajzolo\obj\Debug\__AlapRajzolo.csproj.GenerateResource.Cache
+D:\Troll\2020_21_BevGraf_A\__AlapRajzolo\__AlapRajzolo\obj\Debug\__AlapRajzolo.exe
+D:\Troll\2020_21_BevGraf_A\__AlapRajzolo\__AlapRajzolo\obj\Debug\__AlapRajzolo.pdb
+f:\EKE\_Tantárgyak\Bevezetés a számítógépi grafikába\KorDinamikus\__AlapRajzolo\bin\Debug\__AlapRajzolo.exe.config
+f:\EKE\_Tantárgyak\Bevezetés a számítógépi grafikába\KorDinamikus\__AlapRajzolo\bin\Debug\__AlapRajzolo.exe
+f:\EKE\_Tantárgyak\Bevezetés a számítógépi grafikába\KorDinamikus\__AlapRajzolo\bin\Debug\__AlapRajzolo.pdb
+f:\EKE\_Tantárgyak\Bevezetés a számítógépi grafikába\KorDinamikus\__AlapRajzolo\obj\Debug\__AlapRajzolo.csprojAssemblyReference.cache
+f:\EKE\_Tantárgyak\Bevezetés a számítógépi grafikába\KorDinamikus\__AlapRajzolo\obj\Debug\__AlapRajzolo.Form1.resources
+f:\EKE\_Tantárgyak\Bevezetés a számítógépi grafikába\KorDinamikus\__AlapRajzolo\obj\Debug\__AlapRajzolo.Properties.Resources.resources
+f:\EKE\_Tantárgyak\Bevezetés a számítógépi grafikába\KorDinamikus\__AlapRajzolo\obj\Debug\__AlapRajzolo.csproj.GenerateResource.cache
+f:\EKE\_Tantárgyak\Bevezetés a számítógépi grafikába\KorDinamikus\__AlapRajzolo\obj\Debug\__AlapRajzolo.exe
+f:\EKE\_Tantárgyak\Bevezetés a számítógépi grafikába\KorDinamikus\__AlapRajzolo\obj\Debug\__AlapRajzolo.pdb
+D:\Uni\KorDinamikus\KorDinamikus\__AlapRajzolo\bin\Debug\__AlapRajzolo.exe.config
+D:\Uni\KorDinamikus\KorDinamikus\__AlapRajzolo\bin\Debug\__AlapRajzolo.exe
+D:\Uni\KorDinamikus\KorDinamikus\__AlapRajzolo\bin\Debug\__AlapRajzolo.pdb
+D:\Uni\KorDinamikus\KorDinamikus\__AlapRajzolo\obj\Debug\__AlapRajzolo.csprojAssemblyReference.cache
+D:\Uni\KorDinamikus\KorDinamikus\__AlapRajzolo\obj\Debug\__AlapRajzolo.Form1.resources
+D:\Uni\KorDinamikus\KorDinamikus\__AlapRajzolo\obj\Debug\__AlapRajzolo.Properties.Resources.resources
+D:\Uni\KorDinamikus\KorDinamikus\__AlapRajzolo\obj\Debug\__AlapRajzolo.csproj.GenerateResource.cache
+D:\Uni\KorDinamikus\KorDinamikus\__AlapRajzolo\obj\Debug\__AlapRajzolo.csproj.CoreCompileInputs.cache
+D:\Uni\KorDinamikus\KorDinamikus\__AlapRajzolo\obj\Debug\__AlapRajzolo.exe
+D:\Uni\KorDinamikus\KorDinamikus\__AlapRajzolo\obj\Debug\__AlapRajzolo.pdb
+D:\Uni\KorDinamikus\KorDinamikus\__AlapRajzolo\bin\Debug\System.ValueTuple.dll
+D:\Uni\KorDinamikus\KorDinamikus\__AlapRajzolo\bin\Debug\System.ValueTuple.xml
+D:\Uni\KorDinamikus\KorDinamikus\__AlapRajzolo\obj\Debug\__AlapRajzolo.csproj.CopyComplete
+D:\Uni\Grafika\KorDinamikus\KorDinamikus\__AlapRajzolo\bin\Debug\__AlapRajzolo.exe.config
+D:\Uni\Grafika\KorDinamikus\KorDinamikus\__AlapRajzolo\bin\Debug\__AlapRajzolo.exe
+D:\Uni\Grafika\KorDinamikus\KorDinamikus\__AlapRajzolo\bin\Debug\__AlapRajzolo.pdb
+D:\Uni\Grafika\KorDinamikus\KorDinamikus\__AlapRajzolo\bin\Debug\System.ValueTuple.dll
+D:\Uni\Grafika\KorDinamikus\KorDinamikus\__AlapRajzolo\bin\Debug\System.ValueTuple.xml
+D:\Uni\Grafika\KorDinamikus\KorDinamikus\__AlapRajzolo\obj\Debug\__AlapRajzolo.csprojAssemblyReference.cache
+D:\Uni\Grafika\KorDinamikus\KorDinamikus\__AlapRajzolo\obj\Debug\__AlapRajzolo.Form1.resources
+D:\Uni\Grafika\KorDinamikus\KorDinamikus\__AlapRajzolo\obj\Debug\__AlapRajzolo.Properties.Resources.resources
+D:\Uni\Grafika\KorDinamikus\KorDinamikus\__AlapRajzolo\obj\Debug\__AlapRajzolo.csproj.GenerateResource.cache
+D:\Uni\Grafika\KorDinamikus\KorDinamikus\__AlapRajzolo\obj\Debug\__AlapRajzolo.csproj.CoreCompileInputs.cache
+D:\Uni\Grafika\KorDinamikus\KorDinamikus\__AlapRajzolo\obj\Debug\__AlapRajzolo.csproj.CopyComplete
+D:\Uni\Grafika\KorDinamikus\KorDinamikus\__AlapRajzolo\obj\Debug\__AlapRajzolo.exe
+D:\Uni\Grafika\KorDinamikus\KorDinamikus\__AlapRajzolo\obj\Debug\__AlapRajzolo.pdb
+c:\Users\Troll Ede\Downloads\KorDinamikus\__AlapRajzolo\bin\Debug\__AlapRajzolo.exe.config
+c:\Users\Troll Ede\Downloads\KorDinamikus\__AlapRajzolo\bin\Debug\__AlapRajzolo.exe
+c:\Users\Troll Ede\Downloads\KorDinamikus\__AlapRajzolo\bin\Debug\__AlapRajzolo.pdb
+c:\Users\Troll Ede\Downloads\KorDinamikus\__AlapRajzolo\bin\Debug\System.ValueTuple.dll
+c:\Users\Troll Ede\Downloads\KorDinamikus\__AlapRajzolo\bin\Debug\System.ValueTuple.xml
+c:\Users\Troll Ede\Downloads\KorDinamikus\__AlapRajzolo\obj\Debug\__AlapRajzolo.csprojAssemblyReference.cache
+c:\Users\Troll Ede\Downloads\KorDinamikus\__AlapRajzolo\obj\Debug\__AlapRajzolo.Form1.resources
+c:\Users\Troll Ede\Downloads\KorDinamikus\__AlapRajzolo\obj\Debug\__AlapRajzolo.Properties.Resources.resources
+c:\Users\Troll Ede\Downloads\KorDinamikus\__AlapRajzolo\obj\Debug\__AlapRajzolo.csproj.GenerateResource.cache
+c:\Users\Troll Ede\Downloads\KorDinamikus\__AlapRajzolo\obj\Debug\__AlapRajzolo.csproj.CopyComplete
+c:\Users\Troll Ede\Downloads\KorDinamikus\__AlapRajzolo\obj\Debug\__AlapRajzolo.exe
+c:\Users\Troll Ede\Downloads\KorDinamikus\__AlapRajzolo\obj\Debug\__AlapRajzolo.pdb
+f:\EKE\Kutatás\2020 - Skinning subdiv\Skinning2D\__AlapRajzolo\obj\Debug\__AlapRajzolo.csprojAssemblyReference.cache
+f:\EKE\Kutatás\2020 - Skinning subdiv\Skinning2D\__AlapRajzolo\obj\Debug\__AlapRajzolo.Form1.resources
+f:\EKE\Kutatás\2020 - Skinning subdiv\Skinning2D\__AlapRajzolo\obj\Debug\__AlapRajzolo.Properties.Resources.resources
+f:\EKE\Kutatás\2020 - Skinning subdiv\Skinning2D\__AlapRajzolo\obj\Debug\__AlapRajzolo.csproj.GenerateResource.cache
+f:\EKE\Kutatás\2020 - Skinning subdiv\Skinning2D\__AlapRajzolo\obj\Debug\__AlapRajzolo.exe
+f:\EKE\Kutatás\2020 - Skinning subdiv\Skinning2D\__AlapRajzolo\obj\Debug\__AlapRajzolo.pdb
+f:\EKE\Kutatás\2020 - Skinning subdiv\Skinning2D\__AlapRajzolo\bin\Debug\__AlapRajzolo.exe.config
+f:\EKE\Kutatás\2020 - Skinning subdiv\Skinning2D\__AlapRajzolo\bin\Debug\__AlapRajzolo.exe
+f:\EKE\Kutatás\2020 - Skinning subdiv\Skinning2D\__AlapRajzolo\bin\Debug\__AlapRajzolo.pdb
+f:\EKE\Kutatás\2020 - Skinning subdiv\Skinning2D\__AlapRajzolo\bin\Debug\System.ValueTuple.dll
+f:\EKE\Kutatás\2020 - Skinning subdiv\Skinning2D\__AlapRajzolo\bin\Debug\System.ValueTuple.xml
+f:\EKE\Kutatás\2020 - Skinning subdiv\Skinning2D\__AlapRajzolo\obj\Debug\__AlapRajzolo.csproj.CopyComplete
+D:\Uni\szakdolgozat\Skinning2D (1)\Skinning2D\__AlapRajzolo\bin\Debug\__AlapRajzolo.exe.config
+D:\Uni\szakdolgozat\Skinning2D (1)\Skinning2D\__AlapRajzolo\bin\Debug\__AlapRajzolo.exe
+D:\Uni\szakdolgozat\Skinning2D (1)\Skinning2D\__AlapRajzolo\bin\Debug\__AlapRajzolo.pdb
+D:\Uni\szakdolgozat\Skinning2D (1)\Skinning2D\__AlapRajzolo\bin\Debug\System.ValueTuple.dll
+D:\Uni\szakdolgozat\Skinning2D (1)\Skinning2D\__AlapRajzolo\bin\Debug\System.ValueTuple.xml
+D:\Uni\szakdolgozat\Skinning2D (1)\Skinning2D\__AlapRajzolo\obj\Debug\__AlapRajzolo.csprojAssemblyReference.cache
+D:\Uni\szakdolgozat\Skinning2D (1)\Skinning2D\__AlapRajzolo\obj\Debug\__AlapRajzolo.Form1.resources
+D:\Uni\szakdolgozat\Skinning2D (1)\Skinning2D\__AlapRajzolo\obj\Debug\__AlapRajzolo.Properties.Resources.resources
+D:\Uni\szakdolgozat\Skinning2D (1)\Skinning2D\__AlapRajzolo\obj\Debug\__AlapRajzolo.csproj.GenerateResource.cache
+D:\Uni\szakdolgozat\Skinning2D (1)\Skinning2D\__AlapRajzolo\obj\Debug\__AlapRajzolo.csproj.CoreCompileInputs.cache
+D:\Uni\szakdolgozat\Skinning2D (1)\Skinning2D\__AlapRajzolo\obj\Debug\__AlapRajzolo.csproj.CopyComplete
+D:\Uni\szakdolgozat\Skinning2D (1)\Skinning2D\__AlapRajzolo\obj\Debug\__AlapRajzolo.exe
+D:\Uni\szakdolgozat\Skinning2D (1)\Skinning2D\__AlapRajzolo\obj\Debug\__AlapRajzolo.pdb
+D:\Uni\szakdolgozat\Skinning2D (1)\Skinning2D\__AlapRajzolo\bin\Debug\System.Numerics.Vectors.dll
+D:\Uni\szakdolgozat\Skinning2D (1)\Skinning2D\__AlapRajzolo\bin\Debug\System.Numerics.Vectors.xml
+D:\Szakdolgozat\Skinning2D\__AlapRajzolo\bin\Debug\__AlapRajzolo.exe.config
+D:\Szakdolgozat\Skinning2D\__AlapRajzolo\bin\Debug\__AlapRajzolo.exe
+D:\Szakdolgozat\Skinning2D\__AlapRajzolo\bin\Debug\__AlapRajzolo.pdb
+D:\Szakdolgozat\Skinning2D\__AlapRajzolo\bin\Debug\System.Numerics.Vectors.dll
+D:\Szakdolgozat\Skinning2D\__AlapRajzolo\bin\Debug\System.ValueTuple.dll
+D:\Szakdolgozat\Skinning2D\__AlapRajzolo\bin\Debug\System.Numerics.Vectors.xml
+D:\Szakdolgozat\Skinning2D\__AlapRajzolo\bin\Debug\System.ValueTuple.xml
+D:\Szakdolgozat\Skinning2D\__AlapRajzolo\obj\Debug\__AlapRajzolo.csproj.AssemblyReference.cache
+D:\Szakdolgozat\Skinning2D\__AlapRajzolo\obj\Debug\__AlapRajzolo.Form1.resources
+D:\Szakdolgozat\Skinning2D\__AlapRajzolo\obj\Debug\__AlapRajzolo.Properties.Resources.resources
+D:\Szakdolgozat\Skinning2D\__AlapRajzolo\obj\Debug\__AlapRajzolo.csproj.GenerateResource.cache
+D:\Szakdolgozat\Skinning2D\__AlapRajzolo\obj\Debug\__AlapRajzolo.csproj.CoreCompileInputs.cache
+D:\Szakdolgozat\Skinning2D\__AlapRajzolo\obj\Debug\__AlapRajzolo.csproj.CopyComplete
+D:\Szakdolgozat\Skinning2D\__AlapRajzolo\obj\Debug\__AlapRajzolo.exe
+D:\Szakdolgozat\Skinning2D\__AlapRajzolo\obj\Debug\__AlapRajzolo.pdb
