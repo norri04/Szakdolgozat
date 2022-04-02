@@ -96,3 +96,18 @@ D:\Szakdolgozat\Skinning2D\__AlapRajzolo\obj\Debug\__AlapRajzolo.csproj.CoreComp
 D:\Szakdolgozat\Skinning2D\__AlapRajzolo\obj\Debug\__AlapRajzolo.csproj.CopyComplete
 D:\Szakdolgozat\Skinning2D\__AlapRajzolo\obj\Debug\__AlapRajzolo.exe
 D:\Szakdolgozat\Skinning2D\__AlapRajzolo\obj\Debug\__AlapRajzolo.pdb
+D:\Szakdolgozat repo\Szakdolgozat\Skinning2D\__AlapRajzolo\bin\Debug\__AlapRajzolo.exe.config
+D:\Szakdolgozat repo\Szakdolgozat\Skinning2D\__AlapRajzolo\bin\Debug\__AlapRajzolo.exe
+D:\Szakdolgozat repo\Szakdolgozat\Skinning2D\__AlapRajzolo\bin\Debug\__AlapRajzolo.pdb
+D:\Szakdolgozat repo\Szakdolgozat\Skinning2D\__AlapRajzolo\bin\Debug\System.Numerics.Vectors.dll
+D:\Szakdolgozat repo\Szakdolgozat\Skinning2D\__AlapRajzolo\bin\Debug\System.ValueTuple.dll
+D:\Szakdolgozat repo\Szakdolgozat\Skinning2D\__AlapRajzolo\bin\Debug\System.Numerics.Vectors.xml
+D:\Szakdolgozat repo\Szakdolgozat\Skinning2D\__AlapRajzolo\bin\Debug\System.ValueTuple.xml
+D:\Szakdolgozat repo\Szakdolgozat\Skinning2D\__AlapRajzolo\obj\Debug\__AlapRajzolo.csproj.AssemblyReference.cache
+D:\Szakdolgozat repo\Szakdolgozat\Skinning2D\__AlapRajzolo\obj\Debug\__AlapRajzolo.Form1.resources
+D:\Szakdolgozat repo\Szakdolgozat\Skinning2D\__AlapRajzolo\obj\Debug\__AlapRajzolo.Properties.Resources.resources
+D:\Szakdolgozat repo\Szakdolgozat\Skinning2D\__AlapRajzolo\obj\Debug\__AlapRajzolo.csproj.GenerateResource.cache
+D:\Szakdolgozat repo\Szakdolgozat\Skinning2D\__AlapRajzolo\obj\Debug\__AlapRajzolo.csproj.CoreCompileInputs.cache
+D:\Szakdolgozat repo\Szakdolgozat\Skinning2D\__AlapRajzolo\obj\Debug\__AlapRajzolo.csproj.CopyComplete
+D:\Szakdolgozat repo\Szakdolgozat\Skinning2D\__AlapRajzolo\obj\Debug\__AlapRajzolo.exe
+D:\Szakdolgozat repo\Szakdolgozat\Skinning2D\__AlapRajzolo\obj\Debug\__AlapRajzolo.pdb

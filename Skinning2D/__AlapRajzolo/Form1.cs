@@ -20,6 +20,7 @@ namespace __AlapRajzolo
         List<Circle> C = new List<Circle>();
         int seged;
         int seged2;
+        int seged3;
 
 
         int foundCenter = -1;
@@ -67,55 +68,104 @@ namespace __AlapRajzolo
             //radical line
             for (int i = 0; i < C.Count - 1; i++)
             {
-
                 p = GetRadicalLinePoint(C[i], C[i + 1]);
-
-
                 g.DrawLine(Color.DarkOrange, radicallinepoints[i], p); //radical line rajzolása
 
+                p = GetRadicalLinePoint(C[C.Count - 1], C[0]);
+                g.DrawLine(Color.DarkGreen, radicallinepoints[C.Count - 1], p);
             }
 
             //Hermite ívek
             for (int i = 0; i < C.Count - 2; i++)
             {
+                HermiteArc innerarc;
+                HermiteArc outerarc;
                 seged = i;
-
+                seged3 = 2;
                 if (i > 1)
                 {
                     seged = i * 3;
+
                 }
 
-                PointF p1 = GetTangentLineEndPoint(innertanpoints[seged2], C[i], C[i + 1]);
-                PointF p2 = GetTangentLineEndPoint(innertanpoints[seged + 1], C[i + 1], C[i + 2]);
-                g.DrawLine(Color.Gray, innertanpoints[seged2], p1);
-                g.DrawLine(Color.Gray, innertanpoints[seged + 1], p2);
+            #region Belső
 
-                PointF p3 = GetTangentLineEndPoint(outertanpoints[seged2], C[i], C[i + 1]);
-                PointF p4 = GetTangentLineEndPoint(outertanpoints[seged + 1], C[i + 1], C[i + 2]);
-                g.DrawLine(Color.Gray, outertanpoints[seged2], p3);
-                g.DrawLine(Color.Gray, outertanpoints[seged + 1], p4);
-                HermiteArc innerarc;
-                HermiteArc outerarc;
+                PointF p_inner1 = GetTangentLineEndPoint(innertanpoints[seged2], C[i], C[i + 1]);
+                g.DrawLine(Color.Red, innertanpoints[seged2], p_inner1);
+
+                PointF p_inner2 = GetTangentLineEndPoint(innertanpoints[seged + 1], C[i + 1], C[i + 2]);
+                g.DrawLine(Color.Red, innertanpoints[seged + 1], p_inner2);
+
+                PointF p_inner_one_before_last = GetTangentLineEndPoint(innertanpoints[innertanpoints.Count - 2], C[C.Count - 2], C[C.Count - 1]);
+                g.DrawLine(Color.Pink, innertanpoints[innertanpoints.Count - 2], p_inner_one_before_last);
+                PointF p_inner_last = GetTangentLineEndPoint(innertanpoints[innertanpoints.Count - 1], C[C.Count - 1], C[0]);
+                g.DrawLine(Color.Green, innertanpoints[innertanpoints.Count - 1], p_inner_last);
 
                 innerarc = new HermiteArc(Color.Blue, innertanpoints[seged2], innertanpoints[seged + 1],
-                    Mult(Subs(innertanpoints[seged2], p1), 2), //első pont érintője
-                    Mult(Subs(innertanpoints[seged + 1], p2), 2)); //második pont érintője
+                    Mult(Subs(innertanpoints[seged2], p_inner1), 2), //első pont érintője
+                    Mult(Subs(innertanpoints[seged + 1], p_inner2), 2)); //második pont érintője
                 g.DrawHermiteArc(innerarc);
-                g.FillRectangle(new SolidBrush(Color.Blue), p1.X - s, p1.Y - s, 2 * s, 2 * s);
-                g.FillRectangle(new SolidBrush(Color.Blue), p2.X - s, p2.Y - s, 2 * s, 2 * s);
-                
-                outerarc = new HermiteArc(Color.Purple, outertanpoints[seged2], outertanpoints[seged + 1],
-                    Mult(Subs(outertanpoints[seged2], p3), 2), //első pont érintője
-                    Mult(Subs(outertanpoints[seged + 1], p4), 2)); //második pont érintője
+
+                if (i == C.Count - 3)
+                {
+                    //utolsó előtti ív
+                    innerarc = new HermiteArc(Color.Pink, innertanpoints[innertanpoints.Count - 2], innertanpoints[innertanpoints.Count - 1],
+                    Mult(Subs(innertanpoints[innertanpoints.Count - 2], p_inner_one_before_last), 2), //utolsó előtti pont érintője
+                    Mult(Subs(innertanpoints[innertanpoints.Count - 1], p_inner_last), 2)); //utolsó pont érintője
+                    g.DrawHermiteArc(innerarc);
+                    //utolsó ív
+                    innerarc = new HermiteArc(Color.Green, innertanpoints[innertanpoints.Count - 1], innertanpoints[0],
+                        Mult(Subs(innertanpoints[innertanpoints.Count - 1], p_inner_last), 2), //utolsó pont érintője
+                        Mult(Subs(innertanpoints[0], p_inner1), 2)); //első pont érintője
+                    g.DrawHermiteArc(innerarc);
+                }
+
+                g.FillRectangle(new SolidBrush(Color.Blue), p_inner1.X - s, p_inner1.Y - s, 2 * s, 2 * s);
+                g.FillRectangle(new SolidBrush(Color.Blue), p_inner2.X - s, p_inner2.Y - s, 2 * s, 2 * s);
+
+                #endregion
+
+            #region Külső
+                PointF p_outer1 = GetTangentLineEndPoint(outertanpoints[seged2], C[i], C[i + 1]);
+                g.DrawLine(Color.Red, outertanpoints[seged2], p_outer1);
+
+                PointF p_outer2 = GetTangentLineEndPoint(outertanpoints[seged + 1], C[i + 1], C[i + 2]);
+                g.DrawLine(Color.Red, outertanpoints[seged + 1], p_outer2);
+
+                PointF p_outer_one_before_last = GetTangentLineEndPoint(outertanpoints[outertanpoints.Count - 2], C[C.Count - 2], C[C.Count - 1]);
+                g.DrawLine(Color.Pink, outertanpoints[outertanpoints.Count - 2], p_outer_one_before_last);
+                PointF p_outer_last = GetTangentLineEndPoint(outertanpoints[outertanpoints.Count - 1], C[C.Count - 1], C[0]);
+                g.DrawLine(Color.Green, outertanpoints[outertanpoints.Count - 1], p_outer_last);
+
+                outerarc = new HermiteArc(Color.Blue, outertanpoints[seged2], outertanpoints[seged + 1],
+                    Mult(Subs(outertanpoints[seged2], p_outer1), 2), //első pont érintője
+                    Mult(Subs(outertanpoints[seged + 1], p_outer2), 2)); //második pont érintője
                 g.DrawHermiteArc(outerarc);
-                g.FillRectangle(new SolidBrush(Color.Blue), p3.X - s, p3.Y - s, 2 * s, 2 * s);
-                g.FillRectangle(new SolidBrush(Color.Blue), p4.X - s, p4.Y - s, 2 * s, 2 * s);
+
+                if (i == C.Count - 3)
+                {
+                    //utolsó előtti ív
+                    outerarc = new HermiteArc(Color.Pink, outertanpoints[outertanpoints.Count - 2], outertanpoints[outertanpoints.Count - 1],
+                    Mult(Subs(outertanpoints[outertanpoints.Count - 2], p_outer_one_before_last), 2), //utolsó előtti pont érintője
+                    Mult(Subs(outertanpoints[outertanpoints.Count - 1], p_outer_last), 2)); //utolsó pont érintője
+                    g.DrawHermiteArc(outerarc);
+                    //utolsó ív
+                    outerarc = new HermiteArc(Color.Green, outertanpoints[outertanpoints.Count - 1], outertanpoints[0],
+                        Mult(Subs(outertanpoints[outertanpoints.Count - 1], p_outer_last), 2), //utolsó pont érintője
+                        Mult(Subs(outertanpoints[0], p_outer1), 2)); //első pont érintője
+                    g.DrawHermiteArc(outerarc);
+                }
+
+                g.FillRectangle(new SolidBrush(Color.Blue), p_outer1.X - s, p_outer1.Y - s, 2 * s, 2 * s);
+                g.FillRectangle(new SolidBrush(Color.Blue), p_outer2.X - s, p_outer2.Y - s, 2 * s, 2 * s);
+                #endregion
+
 
                 seged2 = seged + 1;
 
             }
 
-
+            #region apollóniusz kör rajzoló
             ////Apollóniusz körök
             //for (int i = 0; i < C.Count - 2; i++)
             //{
@@ -134,6 +184,7 @@ namespace __AlapRajzolo
 
             //    }
             //}
+            #endregion
 
         }
 
@@ -246,6 +297,7 @@ namespace __AlapRajzolo
                 for (int i = 0; i < C.Count - 1; i++)
                 {
                     radicallinepoints[i] = GetRadicalLine(C[i], C[i + 1]);
+                    radicallinepoints[C.Count - 1] = GetRadicalLine(C[C.Count - 1], C[0]);
                 }
             }
         }
@@ -278,10 +330,10 @@ namespace __AlapRajzolo
             d = d_v.Length();
 
             x1 = (d * d + a.R * a.R - b.R * b.R) / (2 * d);
-            x2 = (d * d + b.R * b.R - a.R * a.R) / (-2 * d);
+            //x2 = (d * d + b.R * b.R - a.R * a.R) / (-2 * d);
 
             k_v = a_v + (Vector2.Normalize(d_v) * x1);
-            K = new PointF(k_v.X, k_v.Y);
+            //K = new PointF(k_v.X, k_v.Y);
 
             perpendicular_v = new Vector2(d_v.Y, d_v.X * -1);
             perpendicular_v = k_v + (Vector2.Normalize(perpendicular_v) * 200);
@@ -347,8 +399,8 @@ namespace __AlapRajzolo
 
             //TODO:  fixelni: ha jobról balra,lefele rajzolok köröket bugos, 
             //ha balról felfele rajzolok akkor is bugos
-           
-                temp = new Vector2(temp.Y*-1, temp.X);
+
+            temp = new Vector2(temp.Y * -1, temp.X);
 
 
             distance *= 2;
@@ -359,7 +411,7 @@ namespace __AlapRajzolo
             if (dir1_v.Length() >= dir2_v.Length())
             {
                 temp = p_v - o_v;
-                temp = new Vector2(temp.Y, temp.X*-1);
+                temp = new Vector2(temp.Y, temp.X * -1);
                 res_v = p_v + Vector2.Normalize(temp) * Convert.ToInt32(distance);
                 res = new PointF(res_v.X, res_v.Y);
             }
@@ -369,7 +421,7 @@ namespace __AlapRajzolo
 
         public Vector2 GetDirection(Circle a, Circle b, PointF tanp, PointF tangentlineendpoint, Vector2 temp)
         {
-            
+
 
             Vector2 tangentlineendpoint_v = new Vector2(tangentlineendpoint.X, tangentlineendpoint.Y);
             Vector2 a_v = new Vector2(a.X, a.Y);
