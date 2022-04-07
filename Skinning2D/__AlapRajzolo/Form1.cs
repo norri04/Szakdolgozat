@@ -90,15 +90,18 @@ namespace __AlapRajzolo
 
             #region Belső
 
-                PointF p_inner1 = GetTangentLineEndPoint(innertanpoints[seged2], C[i], C[i + 1]);
+                PointF p_inner1 = GetTangentLineEndPoint(innertanpoints[seged2], 
+                    C[i], C[i + 1], innertanpoints[seged2+1]);
                 g.DrawLine(Color.Red, innertanpoints[seged2], p_inner1);
 
-                PointF p_inner2 = GetTangentLineEndPoint(innertanpoints[seged + 1], C[i + 1], C[i + 2]);
+                PointF p_inner2 = GetTangentLineEndPoint(innertanpoints[seged + 1],
+                    C[i + 1], C[i + 2], innertanpoints[seged + 2]);
                 g.DrawLine(Color.Red, innertanpoints[seged + 1], p_inner2);
 
-                PointF p_inner_one_before_last = GetTangentLineEndPoint(innertanpoints[innertanpoints.Count - 2], C[C.Count - 2], C[C.Count - 1]);
+                PointF p_inner_one_before_last = GetTangentLineEndPoint(innertanpoints[innertanpoints.Count - 2],
+                    C[C.Count - 2], C[C.Count - 1], innertanpoints[innertanpoints.Count-1]);
                 g.DrawLine(Color.Pink, innertanpoints[innertanpoints.Count - 2], p_inner_one_before_last);
-                PointF p_inner_last = GetTangentLineEndPoint(innertanpoints[innertanpoints.Count - 1], C[C.Count - 1], C[0]);
+                PointF p_inner_last = GetTangentLineEndPoint(innertanpoints[innertanpoints.Count - 1], C[C.Count - 1], C[0], innertanpoints[0]);
                 g.DrawLine(Color.Green, innertanpoints[innertanpoints.Count - 1], p_inner_last);
 
                 innerarc = new HermiteArc(Color.Blue, innertanpoints[seged2], innertanpoints[seged + 1],
@@ -126,15 +129,19 @@ namespace __AlapRajzolo
                 #endregion
 
             #region Külső
-                PointF p_outer1 = GetTangentLineEndPoint(outertanpoints[seged2], C[i], C[i + 1]);
+                PointF p_outer1 = GetTangentLineEndPoint(outertanpoints[seged2], 
+                    C[i], C[i + 1],outertanpoints[seged2+1]);
                 g.DrawLine(Color.Red, outertanpoints[seged2], p_outer1);
 
-                PointF p_outer2 = GetTangentLineEndPoint(outertanpoints[seged + 1], C[i + 1], C[i + 2]);
+                PointF p_outer2 = GetTangentLineEndPoint(outertanpoints[seged + 1], 
+                    C[i + 1], C[i + 2], outertanpoints[seged+2]);
                 g.DrawLine(Color.Red, outertanpoints[seged + 1], p_outer2);
 
-                PointF p_outer_one_before_last = GetTangentLineEndPoint(outertanpoints[outertanpoints.Count - 2], C[C.Count - 2], C[C.Count - 1]);
+                PointF p_outer_one_before_last = GetTangentLineEndPoint(outertanpoints[outertanpoints.Count - 2], 
+                    C[C.Count - 2], C[C.Count - 1], outertanpoints[outertanpoints.Count-1]);
                 g.DrawLine(Color.Pink, outertanpoints[outertanpoints.Count - 2], p_outer_one_before_last);
-                PointF p_outer_last = GetTangentLineEndPoint(outertanpoints[outertanpoints.Count - 1], C[C.Count - 1], C[0]);
+                PointF p_outer_last = GetTangentLineEndPoint(outertanpoints[outertanpoints.Count - 1], 
+                    C[C.Count - 1], C[0], outertanpoints[0]);
                 g.DrawLine(Color.Green, outertanpoints[outertanpoints.Count - 1], p_outer_last);
 
                 outerarc = new HermiteArc(Color.Blue, outertanpoints[seged2], outertanpoints[seged + 1],
@@ -388,52 +395,41 @@ namespace __AlapRajzolo
 
         }
 
-        public PointF GetTangentLineEndPoint(PointF p, Circle a, Circle b)
+        public PointF GetTangentLineEndPoint(PointF tan_p, Circle a, Circle b, PointF next_tan_p)
         {
-            Vector2 p_v = new Vector2(p.X, p.Y);
+            Vector2 tan_p_v = new Vector2(tan_p.X, tan_p.Y);
             Vector2 o_v = new Vector2(a.X, a.Y);
-            Vector2 next_v = new Vector2(b.X, b.Y);
-            Vector2 temp = p_v - o_v;
-            double distance = GetLengthofTanPtoRadLine(p, a, b);
+            Vector2 next_v = new Vector2(next_tan_p.X, next_tan_p.Y);
+            Vector2 temp = tan_p_v - o_v; //R
+            Vector2 res_v;
+            PointF res;
+            double distance = GetLengthofTanPtoRadLine(tan_p, a, b);
 
 
             //TODO:  fixelni: ha jobról balra,lefele rajzolok köröket bugos, 
             //ha balról felfele rajzolok akkor is bugos
 
-            temp = new Vector2(temp.Y * -1, temp.X);
+            temp = new Vector2(temp.Y * -1, temp.X); //R-re merőleges
+
 
 
             distance *= 2;
-            Vector2 res_v = p_v + (Vector2.Normalize(temp) * Convert.ToInt32(distance));
-            PointF res = new PointF(res_v.X, res_v.Y);
-            Vector2 dir1_v = res_v - next_v;
-            Vector2 dir2_v = new Vector2(p.X, p.Y) - next_v;
-            if (dir1_v.Length() >= dir2_v.Length())
+            Vector2 t1_v = tan_p_v + (Vector2.Normalize(temp) * Convert.ToInt32(distance));
+            Vector2 dir1_v = t1_v - next_v;
+
+            Vector2 t2_v = tan_p_v - (Vector2.Normalize(temp) * Convert.ToInt32(distance));
+            Vector2 dir2_v = t2_v - next_v;
+            if (dir1_v.Length() <= dir2_v.Length())
             {
-                temp = p_v - o_v;
-                temp = new Vector2(temp.Y, temp.X * -1);
-                res_v = p_v + Vector2.Normalize(temp) * Convert.ToInt32(distance);
+                res_v = t1_v;
+                res = new PointF(res_v.X, res_v.Y);
+            }else
+            {
+                res_v = t2_v;
                 res = new PointF(res_v.X, res_v.Y);
             }
 
             return res;
-        }
-
-        public Vector2 GetDirection(Circle a, Circle b, PointF tanp, PointF tangentlineendpoint, Vector2 temp)
-        {
-
-
-            Vector2 tangentlineendpoint_v = new Vector2(tangentlineendpoint.X, tangentlineendpoint.Y);
-            Vector2 a_v = new Vector2(a.X, a.Y);
-            Vector2 b_v = new Vector2(b.X, b.Y);
-            Vector2 dir1_v = tangentlineendpoint_v - b_v;
-            Vector2 dir2_v = new Vector2(tanp.X, tanp.Y) - b_v;
-
-            if (dir1_v.Length() > dir2_v.Length())
-            {
-                temp = tangentlineendpoint_v + new Vector2(temp.X, temp.Y * -1);
-            }
-            return temp;
         }
     }
 }
