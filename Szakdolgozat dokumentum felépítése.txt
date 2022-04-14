@@ -1,0 +1,20 @@
+1. Bevezetés
+2. Paraméteres görbék
+	- Egyenes
+	- Kör
+	- Kontroll alakzatokkal definiált görbék
+		* Hermite ív (spline)
+		* Bézier görbe
+		* B-Spline görbe
+3. Gömbalapú modellezés
+	- Mi a feladat
+	- Megoldás (Hoffmann-Kinkli) és annak implementációja
+		* Érintési pontok meghatározása
+			Apollonius probléma kifejtése
+		* Hermite-ívek érintőinek meghatározása
+4. Összegzés, további fejlesztési lehetőségek
+5. Ábrák jegyzéke
+6. Irodalomjegyzék
+- cikk
+- Hoffmnann Miklós: Topológia és differenciálgeometria
+- Hajós György: Bevezetés a geometriába
